@@ -1,0 +1,351 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+
+
+
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:rgba(165,10,5,255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: rgb(135, 135, 135);
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgb(150, 1, 1);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: rgb(142,132,132);
+  }
+  
+body {
+    transition: margin-left .5s;
+  }
+
+#logo{
+    display: flex;
+    justify-content: center;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    align-items: flex-start;
+   height: 100vh;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    background-image: url(images/j1text.jpg);
+    
+}
+
+#searchbar{
+    border-radius: 0.6em;
+    font-family: 'Permanent marker', cursive;
+    border: 0.2em solid rgb(150, 1, 1);
+    
+}
+
+header img{
+    display: block;
+    transition: all 1s;
+    border: 2em;
+    width: 60%;
+   
+}
+
+header img:hover{
+    animation: shake 1s;
+  animation-iteration-count: 1s;
+}
+
+@keyframes shake {
+    0% { transform:  rotate(0deg); }
+    15% { transform:  rotate(-3deg); }
+    30% { transform:  rotate(3deg); }
+    45% { transform:  rotate(0deg); }
+    60% { transform:  rotate(3deg); }
+    75% { transform:  rotate(-3deg); }
+    100% { transform:  rotate(0deg); }
+    
+  }
+
+.box{
+    background-color:rgb(207, 207, 207);
+    padding: 3em;
+    margin: 3em;
+}
+
+h2{
+    padding: 1em;
+    font-family: 'Permanent marker', cursive;
+}
+
+#welcomeText{
+    font-size: large;
+    font-family: 'Poiret One', cursive;
+}
+
+#boys{
+    height: auto;
+    width: 100%;
+    max-width: 70vh;
+    margin: 5em ;
+    border: 2em solid #c83e21;
+    size: rela;
+}
+
+#aboutus{
+    background-color: rgb(207, 207, 207);
+    align-self: center;
+    padding: 2em;
+    margin-right: 5em;
+    font-family: 'Poiret One', cursive;
+
+}
+
+#aboutus:hover{
+    background-color: rgb(184, 184, 184);
+    
+}
+
+#aboutus:hover #whoarewe{
+    box-shadow: inset 7.7em 0 0 0 #c83e21;
+    color: white;
+  }
+
+#boysAbout{
+    display: flex;
+}
+
+#whoarewe{
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    padding: 0%;
+    margin: 1em;
+}
+
+#boy{
+  height: auto;
+  width: 100%;
+  max-width: 70vh;
+    border: 2em solid rgba(161,192,228,255);
+    position: relative;
+    margin-left: 5em;
+    margin-top: 5em;
+    grid-area: boy;
+  
+}
+
+#boyfit{
+  display: grid;
+  grid-template-areas:
+  'boy button'
+  'boy button'
+  'boy button'
+  'boy button';
+  margin-right: 15em;
+  row-gap: 2em;
+  
+}
+
+.boybutton{
+  background-color: rgba(161,192,228,255);
+  font-size: 2em;
+  width: auto;
+  height: 5em;
+  font-family:  'Poiret One', cursive;
+  border-radius: 0.2em;
+  color: rgb(123,129,132);
+  border: solid rgb(123,129,132);
+  
+}
+
+.boybutton:hover{
+  background-color: rgb(123,129,132);
+  color: rgba(161,192,228,255);
+  cursor: pointer;
+}
+
+#button1{
+  margin-top: 2em;
+}
+
+#ootw{
+    background-color: #c83e21;
+}
+
+#girl{
+  height: auto;
+  width: 100%;
+  max-width: 70vh;
+    border: 2em solid rgba(222,206,183,255);
+    position: relative;
+    margin-top: 5em;
+    margin-left: 30em;
+    grid-area: girl;
+
+}
+
+.girlbutton{
+  background-color: rgba(222,206,183,255);
+  font-size: 2em;
+  width: auto;
+  height: 5em;
+  font-family:  'Poiret One', cursive;
+  border-radius: 0.2em;
+  color: rgb(123,129,132);
+  border: solid rgb(123,129,132);
+  margin-left:5em;
+  
+}
+
+.girlbutton:hover{
+  color:rgba(222,206,183,255) ;
+  background-color: rgb(123,129,132);
+  cursor: pointer;
+}
+
+#buttongirl1{
+  margin-top: 5em;
+}
+
+#girlfit{
+  display: grid;
+  grid-template-areas:
+  'button girl'
+  'button girl'
+  'button girl'
+  'button girl'
+  'button girl'
+  'button girl';
+  row-gap: 2em;
+  margin-bottom: 5em;
+}
+
+#botw{
+  background-color: #c83e21;
+}
+
+#offwhitelogo{
+  height: auto;
+  width: 100%;
+  max-width: 50vh;
+}
+
+#offwhitetext{
+  font-family:  'Poiret One', cursive;
+  font-size: x-large;
+}
+
+#offwhiteimg{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+}
+
+.off{
+  height: auto;
+  width: 100%;
+  max-width: 45vh;
+}
+
+#feedback{
+  font-size: 4em;
+  margin-top: 1em;
+}
+
+h3{
+  font-family:  'Poiret One', cursive;
+}
+
+#feedbackbox{
+  margin-left: 3em;
+}
+
+#name,#email{
+  font-size: 2em;
+  border-radius: 0.3em;
+  margin-bottom: 1em;
+}
+
+#textarea{
+  border-radius: 0.3em;
+  display: block;
+  border: 0.2em solid;
+}
+
+#submit{
+  font-size: x-large;
+  font-family:  'Poiret One', cursive;
+  margin-left: 6em;
+  margin-top: 2em;
+}
+
+footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(207, 207, 207);
+  margin-top: 3em;
+}
+
+#contactinfo{
+  margin: 1.5em;
+  font-size: 2em;
+  font-family:  'Poiret One', cursive;
+}
+
+#infofooter{
+  margin: 1.5em;
+  font-size: 2em;
+}
+
+#instagramlogo{
+  height: auto;
+  width: 100%;
+  max-width: 5vh;
+}
+
+.info:hover{
+  text-decoration: underline;
+  cursor: pointer
+}
